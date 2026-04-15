@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Kamin Driver</string>
+
+    <!-- Route picker -->
+    <string name="route_1">Маршрут 1</string>
+    <string name="route_2">Маршрут 2</string>
+    <string name="next_client_label">Наступний клієнт</string>
+    <string name="start_navigation">Старт навігації</string>
+    <string name="loading">Завантаження…</string>
+    <string name="route_completed">Маршрут завершено 🎉</string>
+    <string name="permission_denied">Потрібен дозвіл на геолокацію</string>
+    <string name="token_missing">Токен Mapbox не отримано. Перевірте з\'єднання з сервером.</string>
+
+    <!-- Navigation -->
+    <string name="arrived_button">ПРИБУВ</string>
+    <string name="next_client_label_nav">Наступний клієнт:</string>
+    <string name="posting_arrived">Відправка…</string>
+    <string name="route_done_title">Маршрут завершено</string>
+    <string name="route_done_message">Усі клієнти обслуговані. Гарної роботи!</string>
+    <string name="ok">OK</string>
+    <string name="error_location">Не вдалося отримати геолокацію</string>
+    <string name="error_network">Помилка мережі: %s</string>
+    <string name="eta_format">ETA: %d хв</string>
+</resources>

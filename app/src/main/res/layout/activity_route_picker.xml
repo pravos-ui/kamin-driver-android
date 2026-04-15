@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:fillViewport="true"
+    tools:context=".ui.routepicker.RoutePickerActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <!-- App title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Виберіть маршрут"
+            android:textSize="16sp"
+            android:textColor="@color/colorTextSecondary"
+            android:layout_marginBottom="40dp" />
+
+        <!-- Route 1 button -->
+        <Button
+            android:id="@+id/btnRoute1"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:text="@string/route_1"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:backgroundTint="@color/colorRouteButton"
+            android:textColor="@color/colorRouteButtonText"
+            android:layout_marginBottom="16dp"
+            style="@style/Widget.MaterialComponents.Button" />
+
+        <!-- Route 2 button -->
+        <Button
+            android:id="@+id/btnRoute2"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:text="@string/route_2"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:backgroundTint="@color/colorRouteButton"
+            android:textColor="@color/colorRouteButtonText"
+            android:layout_marginBottom="32dp"
+            style="@style/Widget.MaterialComponents.Button" />
+
+        <!-- Loading indicator -->
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Next client card -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardNextClient"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginBottom="24dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="@color/colorCardBackground"
+            xmlns:app="http://schemas.android.com/apk/res-auto">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/tvNextClientLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/next_client_label"
+                    android:textSize="12sp"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorTextSecondary"
+                    android:letterSpacing="0.1"
+                    android:layout_marginBottom="6dp" />
+
+                <TextView
+                    android:id="@+id/tvClientSurname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorTextPrimary"
+                    android:layout_marginBottom="4dp"
+                    tools:text="Іваненко" />
+
+                <TextView
+                    android:id="@+id/tvClientAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorTextSecondary"
+                    android:layout_marginBottom="8dp"
+                    tools:text="вул. Хрещатик, 1" />
+
+                <TextView
+                    android:id="@+id/tvEta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    android:visibility="gone"
+                    tools:text="ETA: 12 хв" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Error message -->
+        <TextView
+            android:id="@+id/tvError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorError"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:visibility="gone"
+            android:layout_marginBottom="16dp"
+            tools:text="Помилка мережі" />
+
+        <!-- Start navigation button -->
+        <Button
+            android:id="@+id/btnStartNavigation"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="@string/start_navigation"
+            android:textSize="18sp"
+            android:enabled="false"
+            android:backgroundTint="@color/colorAccent"
+            style="@style/Widget.MaterialComponents.Button" />
+
+    </LinearLayout>
+</ScrollView>

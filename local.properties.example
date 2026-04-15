@@ -1,0 +1,11 @@
+# local.properties — DO NOT COMMIT THIS FILE
+# Copy this file to local.properties and fill in your values.
+
+# Android SDK location (Android Studio sets this automatically)
+sdk.dir=/path/to/your/Android/sdk
+
+# Mapbox public access token (pk.*) — used at runtime as a debug fallback
+MAPBOX_ACCESS_TOKEN=pk.your_public_token_here
+
+# Mapbox secret downloads token (sk.*) — required to download the SDK via Gradle
+MAPBOX_DOWNLOADS_TOKEN=sk.your_secret_downloads_token_here
